@@ -8,7 +8,7 @@ const Events =()  =>{
   const {getEvents} =UseEventsActions()    
 
     const fetchDate =async() =>{
-        await getEvents({id:4})
+        await getEvents({id:27})
     }
 
     useEffect(() =>{

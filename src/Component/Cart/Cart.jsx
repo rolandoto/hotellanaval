@@ -13,15 +13,14 @@ const Cart = () => {
     const totalCount = getCartTotalCount()
     const quantityPerson = getCartTotalCountPerson()
 
-
-
     const navigate = useNavigate();
-
 
     const PostHotelByIdHotel = useCallback(async () => {
          navigate("/Checkout");
       }, []);
 
+
+      
 
     //{numOfProductsInCart ==0 ? <EmpyCart title={"Tu carrito esta vacio"}  /> 
     //fixed top-20 z-50 cart let-0 right-0 bg-white transition duration-200  border rounded-md shadow-md w-80 mx-auto mt-10

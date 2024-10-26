@@ -26,7 +26,7 @@ const ButtonAccomodation =({price,nights,person,handleAddToCart,promotion,validP
                   }
                     <h2  className="text-1xl font-semibold "></h2>
                 </div>
-                <button onClick={handleAddToCart} className="  w-full md:w-[150px]   Button-Search bg-black text-white py-4  rounded hover:bg-orange-600 transition duration-200">
+                <button onClick={handleAddToCart} className="  w-full md:w-[150px]   Button-Search bg-black text-white py-4  rounded transition duration-200">
                     Reservar 
                 </button>
         </ContaineButton>

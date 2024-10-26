@@ -54,7 +54,7 @@ const Home =() =>{
   }
 
   const FindIdHotel=(hotel) =>{
-		return hotel.id_hotel ==7
+		return hotel.id_hotel ==27
 	}
 	
 	const hotel = hotelList.find(FindIdHotel)
@@ -387,16 +387,12 @@ const subtotal = getCartSubtotal()
  */
 const [menuOpen, setMenuOpen] = useState(false);
 const rooms = [
-  {title: 'Room Estándar superior', price:240000 , image:"https://grupo-hoteles.com/storage/app/7/rooms/702137671-37-rooms-slider-1-estandar_superior_lleras_park_concept_medellin_poblado_medellin_economico_colombia_antioquia.webp", 
-    features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV',"Aire Acondicionado"] },
-  {title: 'Room Estándar',price:218000, image: "https://grupo-hoteles.com/storage/app/7/rooms/1353190353-38-rooms-slider-2-Habitacion-Estandar-Hotel-lleras-park-concept-hotel-poblado-economico-slider-principal-1.webp", 
-    features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV',"Aire Acondicionado"] },
-  {title: 'Room Doble superior twin',price:260000, image: "https://grupo-hoteles.com/storage/app/7/rooms/585930631-39-rooms-slider-2-slider_1_doble_superior_twin_lleras_park_concept_medellin_poblado_medellin_economica_antioquia_colombia_med.webp", 
-    features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV','Aire Acondicionado']},
-  {title: 'Room Suite junior',price:312000, image: "https://grupo-hoteles.com/storage/app/7/rooms/286234936-40-rooms-slider-1-rooms-slider-1-superior_junior_jacuzzi_lleras_park_concept_medellin_poblado_medellin_economica_antioquia_colombia..webp", 
-   features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV','Aire Acondicionado']},
-  {title: 'Room Familiar',price:720000, image: "https://grupo-hoteles.com/storage/app/7/rooms/625520311-42-rooms-slider-1-one_million_lleras_park_concept_medellin_poblado_medellin_economica_antioquia_colombia_zona_rosa.webp", 
-   features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV','Aire Acondicionado']},
+  {title: 'Room Esencia', price:240000 , image:"https://github.com/rolandoto/image-pms/blob/main/Esencia/IMG_4580.JPG?raw=true", 
+    features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV'] },
+  {title: 'Room Dueto',price:218000, image: "https://github.com/rolandoto/image-pms/blob/main/Dueto/IMG_4588.JPG?raw=true", 
+    features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV'] },
+  {title: 'Room Trinidad',price:260000, image: "https://github.com/rolandoto/image-pms/blob/main/Trinidad/IMG_4530.JPG?raw=true", 
+    features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV']}
 ];
 /**
  * 
@@ -406,36 +402,28 @@ const rooms = [
 
 const faqs = [
   {
-    question: '¿Cuáles son los sitios turísticos de la ciudad y si están cerca al hotel?',
+    question: '¿Como hago para llegar al COLIVING?',
     answer: (
       <ul className="list-disc list-inside">
-        <li>Teatros (3 a 9 min caminando)</li>
-        <li>Museo de Antioquia</li>
-        <li>Plaza Botero</li>
-        <li>Jardín Botánico de Medellín</li>
-        <li>Parque Lleras</li>
-        <li>Comuna 13</li>
+        <li>tenemos muchas opciones para llegar, rutas de buses y estamos ubicados a 2 cuadras de la estación san antonio del metro </li>
       </ul>
     ),
   },
   {
-    question: '¿Cómo es la seguridad del sector? ¿se puede salir en la noche?',
-    answer: 'La seguridad del sector es buena, pero siempre se recomienda tomar precauciones normales como en cualquier ciudad. Es seguro salir en la noche, especialmente en áreas concurridas y turísticas.',
+    question: '¿Como me puedo comunicar con el COLIVING?',
+    answer: 'lina de atencion: 3182674142',
   },
   {
-    question: '¿Cuáles son los mejores centros comerciales de la ciudad de Medellín?',
+    question: '¿Que tan cerca esta el aeropouerto ?',
     answer: (
       <ul className="list-disc list-inside">
-        <li>Centro Comercial Santa Fe</li>
-        <li>Centro Comercial El Tesoro</li>
-        <li>Centro Comercial Oviedo</li>
-        <li>Centro Comercial Premium Plaza</li>
+        <li>estamos a 40 minutos del aeropuerto </li>
       </ul>
     ),
   },
   {
-    question: '¿Dónde puedo cambiar divisas?',
-    answer: 'Puede cambiar divisas en casas de cambio ubicadas en centros comerciales, en el aeropuerto, y en diversas partes del centro de la ciudad.',
+    question: '¿Que tipo de APARTAMENTOS tiene ?',
+    answer: 'aparta estudios para 1, 2 o 3 personas.',
   },
 ];
 
@@ -458,16 +446,15 @@ const faqs = [
       <BookNowButton />
          <div className="relative w-full h-[1000px]">
             <img
-              src="https://h-img1.cloudbeds.com/uploads/315191/img_3151~~66be7ab2bae2b.jpg"
+              src="https://github.com/rolandoto/image-pms/blob/main/Trinidad/IMG_4530.JPG?raw=true"
               className="w-full h-full object-bottom" />
-        <Header />
+              <Header />
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
               <h1 className="font-davinci text-4xl sm:text-6xl md:text-7xl mb-2 sm:mb-4"></h1>
-                  <h2 className="font-lora text-5xl sm:text-7xl opacity-90 md:text-9xl">Lleras Park</h2>
+                  <h2 className="font-lora text-5xl sm:text-7xl opacity-90 md:text-9xl">Civitas</h2>
                   <p className="mt-2 text-base opacity-90 md:text-xl lg:text-3xl font-lora font-normal">
-                    Más que un hotel, una experiencia artística
+                  vive una experiencia experiencia mas
                   </p>
-
                   {visible && (
                     <CalenderSearchHome 
                       HandClickMenuPeople={HandClickMenuPeople} 
@@ -478,9 +465,7 @@ const faqs = [
                       onsubmit={PostHotelByIdHotel}
                       totalCountAdults={totalCountAdults}
                     />
-                    
                   )}
-                
               <div className="hidden lg:block  ">
                 {contextShowMenuPeople && 
                   <Search contextShowMenuPeople={contextShowMenuPeople}
@@ -599,15 +584,9 @@ const faqs = [
           <div ref={roomSectionRef} >   
             <RoomDetail ref={roomSectionRef}  rooms={rooms} />
           </div>
-
-        
-
           <div ref={roomEventsSectionRef} >
             <Events  />
           </div>
-
-      
-
           <AccordionAsk faqs={faqs} />
           <Footer />
     </>

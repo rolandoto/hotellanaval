@@ -17,7 +17,7 @@ const HeaderAccomodation =() =>{
     },[])
 
     const FindIdHotel=(hotel) =>{
-        return hotel.id_hotel ==4
+        return hotel.id_hotel ==27
     }
     
     const hotel = hotelList.find(FindIdHotel) 

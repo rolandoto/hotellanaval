@@ -12,7 +12,6 @@ const DescripctionAccomodation =({title,cantidad,description,promotion}) =>{
                 <h2 className="text-[23px] font-normal font-weit ">{title}</h2>
                 </TextWidth> 
                 <div className="text-sm text-gray-600  "></div>
-                
                     <IconAccomodation title={title}/>
                     {promotion && <div className="bg-orange-500  text-white flex items-center p-1 rounded-md">
                         <div className="mr-4 flex items-center">

@@ -45,7 +45,6 @@ const Header =() =>{
       };
     }, []);
 
-
     return (
         <SectionSearch  >
         <header
@@ -54,24 +53,23 @@ const Header =() =>{
            }`}
          >
            <nav className="border-b p-2 border-white flex justify-between items-center space-x-6 max-w-[97%] mx-auto">
-             <div className="text-2xl sm:text-3xl font-lora"><Link to="/"  > Lleras Park             </Link> </div>
+             <div className="text-2xl sm:text-3xl font-lora"><Link to="/"  >  <img  class="h-24 "  src="https://github.com/rolandoto/image-pms/blob/main/PNG/Logotipo_Versio%CC%81n%20Principal_Negativo.png?raw=true" alt="" />             </Link> </div>
              <div className="hidden md:flex space-x-6">
-               <Link to="/Rooms" className="text-[15px] hover:underline">
-               HABITACIONES
+               <Link to="/" className="text-[15px] hover:underline">
+               Inicio
                </Link>
-               <a href="#" className="text-[15px]hover:underline">
-               COMODIDADES
+               <a href="/Events" className="text-[15px]hover:underline">
+               Próximos eventos
                </a>
-               <Link to="/Events" className="text-[15px] hover:underline">
-             PRÓXIMOS EVENTOS
+               <Link to="/Accomodation" className="text-[15px] hover:underline">
+               Reservas
            </Link>
              
              </div>
              <a  
               target="_blank"
-              href="https://www.google.com/maps?ll=6.20835,-75.567854&z=15&t=m&hl=en&gl=CO&mapclient=embed&cid=5510893515100828768"
+              href="https://maps.app.goo.gl/G5jZygjC5M614zEs8?g_st=com.google.maps.preview.copy"
              className="bg-black text-white rounded-full px-3 sm:px-4 py-2 text-xs sm:text-base">
-              
                COMO LLEGAR
              </a>
              <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
@@ -80,15 +78,14 @@ const Header =() =>{
            </nav>
           {menuOpen && (
               <div className="md:hidden bg-[#4141416c] text-white py-2">
-              <Link to="/Rooms" className="block px-4 py-2 ">
-              HABITACIONES
+              <Link to="/" className="block px-4 py-2 ">
+              Inicio
               </Link>
-            
-              <a href="#" className="block px-4 py-2 ">
-              COMODIDADES
+              <a href="/Events" className="block px-4 py-2 ">
+              Próximos eventos
               </a>
-              <Link to="/Events" className="block px-4 py-2  text-[15px] hover:underline">
-                    PRÓXIMOS EVENTOS
+              <Link to="/Accomodation" className="block px-4 py-2  text-[15px] hover:underline">
+                  Reservas
                   </Link>
                     
             </div>

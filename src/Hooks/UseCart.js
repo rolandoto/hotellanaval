@@ -12,15 +12,17 @@ const UseCart =() =>{
     }*/
 
 
-    const getCartSubtotal = () => {
-        let subtotal = 0    
-        Object.values(cart)
-          .forEach(({ quantity, Price }) => {
-            subtotal += Price
-          })
     
-        return subtotal
-    }
+
+    const getCartSubtotal = () => {
+      let subtotal = 0    
+      Object.values(cart)
+        .forEach(({ quantity, Price }) => {
+          subtotal += Price
+        })
+  
+      return subtotal
+  }
 
     
     const getCartTotalCount = () => {
@@ -29,19 +31,16 @@ const UseCart =() =>{
           .forEach(({ quantity}) => {
             totalCuantity += quantity
           })
-    
         return totalCuantity
     }
+
+
     const getCartTotalCountPerson = () => {
       let personQuantity = 0;
-      
-      Object.values(cart).forEach(({ personsList }) => {
-        console.log(personsList)
-          personsList.forEach((person) => {
-              personQuantity += person; // Sumar la cantidad de personas representada por cada elemento en `personsList`
-          });
-      });
-      
+      Object.values(cart)
+      .forEach(({ person}) => {
+        personQuantity += person
+      })
       return personQuantity;
   }
 
@@ -52,7 +51,6 @@ const UseCart =() =>{
         getCartTotalCountPerson
        
     }
-
 
 }
 
