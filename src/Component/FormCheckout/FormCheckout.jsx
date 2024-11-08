@@ -19,7 +19,7 @@ const FormCheckout=({Country,handleSubmit,loading,formErrors,handleChange,formVa
 
     //docuimetn
     const FindIdHotel=(hotel) =>{
-        return hotel.id_hotel ==4
+        return hotel.id_hotel ==27
     }
     
     const hotel = hotelList.find(FindIdHotel) 
@@ -55,7 +55,7 @@ const FormCheckout=({Country,handleSubmit,loading,formErrors,handleChange,formVa
                                 <h2 className="text-xl font-bold mb-4">Resumen de tu reserva</h2>
                                     <div className="mb-4">
                                         <h3 className="text-lg font-semibold">{FillContent()}</h3>
-                                        <p className="text-gray-600">Cl. 47 #41 - 55, Medellín, Colombia</p>
+                                        <p className="text-gray-600">Cra. 44 #47-20, Medellín, Colombia</p>
                                     </div>
                                     {cart.map((itemCardRoom,e) =>(
                                     <CardCheckout key={e}   {...itemCardRoom} />

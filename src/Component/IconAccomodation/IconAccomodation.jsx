@@ -27,7 +27,9 @@ const IconAccomodation =({title}) =>{
 
               
                     <div className="flex items-center" >
-                        <IconsPiBedThin /> <span span className="ml-2">Cama matrimonial</span>
+                        <IconsPiBedThin /> {title == "Esencia" &&  <span span className="ml-2">Cama matrimonial</span>}  
+                        {title == "Dueto" &&  <span span className="ml-2">2 Camas</span>} 
+                        {title == "Trinidad" &&  <span span className="ml-2">3 Camas</span>}  
                     </div>
                     <div className="flex items-center" >
                     <IconShower  /> <span className="ml-2">Baño privado con ducha</span>

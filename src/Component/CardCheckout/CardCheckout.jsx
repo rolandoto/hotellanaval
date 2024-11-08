@@ -20,7 +20,6 @@ const CardCheckout =({room_image,title,Price,nights,person,end,start,Price_nigth
                             <p className="text-sm  font-semibold">{title}</p>
                             <p className="font-normal text-[13px]" >Entrada: <span className="font-normal text-[13px]">{dateStart} 3:00 pm</span></p>
                             <p className="font-normal text-[13px]" >Salida: <span className="font-normal text-[13px]">{dateEnd} 1:00 pm</span></p>
-                            <p className="font-normal text-[13px]" >Regimen/plan: <span className="font-normal text-[13px]">Alojamiento y desayuno</span></p>
                             <p className="font-normal text-[13px]">ocupación: <span className="font-normal text-[13px]">{person} adultos</span></p>
                             <p className="font-normal text-[13px]">Noches: <span className="font-normal text-[13px]">{nights} </span></p>
                     </div>

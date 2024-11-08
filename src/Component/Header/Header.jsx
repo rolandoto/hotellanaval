@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { SectionSearch } from "../../Ui/Style/GeneralStyle";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-
 const Header =() =>{
 
     const [menuOpen, setMenuOpen] = useState(false);

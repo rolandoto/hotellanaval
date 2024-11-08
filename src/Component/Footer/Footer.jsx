@@ -41,16 +41,14 @@ const Footer =() =>{
                 <div>
                     <div className="">
                         <ul className="space-y-2">
-                            <li className="flex items-center"> <IconFaWhatsapp /> +57 318 26 74 142</li>
-                            <li className="flex items-center mr-6">  <IconsMdEmail />  .com</li>
+                            <li className="flex items-center"> <IconFaWhatsapp /> +57 301 746 13 71</li>
+                            <li className="flex items-center mr-6">  <IconsMdEmail /> gerencia@civitas-medellin.com</li>
                             <li className="flex items-center"> <IconFaMapMarkerAlt/>crra 44 #47-20                           </li>
                         </ul>
                     </div>
                     <div className="w-[350px] lg:w-[280px] lg:w-122 " >
                             <div className="flex justify-center space-x-4 mt-4">
                                 <IconFaInstagram   onclick={handleInstagram} />
-                             
-                             
                             </div>
                     </div>
                 </div>
