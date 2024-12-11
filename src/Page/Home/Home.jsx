@@ -387,12 +387,14 @@ const subtotal = getCartSubtotal()
  */
 const [menuOpen, setMenuOpen] = useState(false);
 const rooms = [
-  {title: 'Room Esencia', price:80000 , image:"https://github.com/rolandoto/image-pms/blob/main/Esencia/IMG_4580.JPG?raw=true", 
+  {title: 'Room Esencia', price:100000 , image:"https://github.com/rolandoto/image-pms/blob/main/Esencia/IMG_4580.JPG?raw=true", 
     features: ['Cama matrimonial', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV'] },
-  {title: 'Room Dueto',price:120000, image: "https://github.com/rolandoto/image-pms/blob/main/Dueto/IMG_4588.JPG?raw=true", 
+  {title: 'Room Dueto',price:110000, image: "https://github.com/rolandoto/image-pms/blob/main/Dueto/IMG_4588.JPG?raw=true", 
     features: ['2 Camas', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV'] },
-  {title: 'Room Trinidad',price:200000, image: "https://github.com/rolandoto/image-pms/blob/main/Trinidad/IMG_4530.JPG?raw=true", 
-    features: ['3 Camas', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV']}
+  {title: 'Room Trinidad',price:150000, image: "https://github.com/rolandoto/image-pms/blob/main/Trinidad/IMG_4530.JPG?raw=true", 
+    features: ['3 Camas', 'Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV']},
+    {title: 'Room Trinidad familiar',price:150000, image: "https://github.com/rolandoto/image-pms/blob/main/Dueto/WhatsApp%20Image%202024-12-11%20at%207.45.45%20AM.jpeg?raw=true", 
+    features: ['1 Cama doble','1 Cama sencilla','Baño privado con ducha', 'Wi-Fi gratuito', 'Smart TV']}
 ];
 /**
  * 

@@ -325,7 +325,7 @@ const Accommodation = () => {
                  </div> 
             </div>} 
             {scrolledbook && (
-                <div className="w-full  animation z-40 lg:hidden bg-white fixed top-[50px] p-4  shadow-md ">
+                <div className="w-full mt-16  animation z-40 lg:hidden bg-white fixed top-[50px] p-4  shadow-md ">
                   <div className="flex items-center justify-between text-gray-700 ">
                     <div className="flex items-center" onClick={HandClickMenu}>
                       <SlCalender fontSize={20}  className="mr-2" />
