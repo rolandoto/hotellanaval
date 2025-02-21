@@ -22,14 +22,14 @@ const PostHotelByIdHotel = async ({id,desde,hasta,counPeople}) => {
       }
   };
 
-  const PostCreateReservation = async ({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone}) => {
+  const PostCreateReservation = async ({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone,valid}) => {
     try {
         const resp = await fetch(`${config.serverRoute}/api/hotels/wompi/RegisterCardWompi`, {
           method: "POST",
           headers: {
             'Content-type': 'application/json'
           },
-          body: JSON.stringify({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone})
+          body: JSON.stringify({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone,valid})
         });
     
         if (!resp.ok) {

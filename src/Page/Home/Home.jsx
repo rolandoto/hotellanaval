@@ -448,12 +448,12 @@ const faqs = [
       <BookNowButton />
          <div className="relative w-full h-[1000px]">
             <img
-              src="https://github.com/rolandoto/image-pms/blob/main/Trinidad/IMG_4530.JPG?raw=true"
+              src="https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_155315206030.jpg?raw=true"
               className="w-full h-full object-bottom" />
               <Header />
               <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-4">
               <h1 className="font-davinci text-4xl sm:text-6xl md:text-7xl mb-2 sm:mb-4"></h1>
-                  <h2 className="font-lora text-5xl sm:text-7xl opacity-90 md:text-9xl">Civitas</h2>
+                  <h2 className="font-lora text-5xl sm:text-7xl opacity-90 md:text-9xl">Naval</h2>
                   <p className="mt-2 text-base opacity-90 md:text-xl lg:text-3xl font-lora font-normal">
                   vive una experiencia experiencia mas
                   </p>

@@ -9,10 +9,10 @@ const useReservationCreate =() =>{
 
     const dispatch =  useAppDispatch()
 
-    const PostCreateHotel =async({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone}) =>{
+    const PostCreateHotel =async({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone,valid}) =>{
         dispatch(loading())
         try {
-            const response  = await HttpClient.PostCreateReservation({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone})
+            const response  = await HttpClient.PostCreateReservation({cart,name,apellido,email,city,country,fecha,number,exp_month,exp_year,cvc,card_holder,subtotal,phone,valid})
             if(response){
                 dispatch(setCreateReservation(response)) 
                 RemoveCartAll()

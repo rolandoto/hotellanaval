@@ -19,7 +19,7 @@ const FormCheckout=({Country,handleSubmit,loading,formErrors,handleChange,formVa
 
     //docuimetn
     const FindIdHotel=(hotel) =>{
-        return hotel.id_hotel ==27
+        return hotel.id_hotel ==26
     }
     
     const hotel = hotelList.find(FindIdHotel) 

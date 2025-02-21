@@ -100,7 +100,7 @@ const Accommodation = () => {
     const PostHotelByIdHotel = useCallback(async () => {
         setContextMenuPosition(false);
         setContextShowMenuPeople(false)
-        await getHotel({ id: 27, desde:formattedStartDate, hasta: formattedEndDate,counPeople:totalCountAdults });
+        await getHotel({ id: 26, desde:formattedStartDate, hasta: formattedEndDate,counPeople:totalCountAdults });
     }, [formattedStartDate,formattedEndDate,totalCountAdults]);
 
 
@@ -145,7 +145,7 @@ const Accommodation = () => {
     const  {GetRoomsPromotions} = useRoomsPromotions()
   
     const FetchDate =async() =>{
-          await GetRoomsPromotions({id:27})
+          await GetRoomsPromotions({id:26})
     }
 
 
@@ -205,6 +205,9 @@ const Accommodation = () => {
           </div>
       )}</>
     }
+
+
+    console.log(hotel)
   
     useEffect(() =>{
       FetchDate ()

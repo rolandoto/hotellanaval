@@ -54,7 +54,8 @@ const Checkout  =() =>{
                                   exp_year:formValues.expiryYear,
                                   cvc:formValues.cvc,
                                   card_holder:formValues.cardName,
-                                  subtotal
+                                  subtotal,
+                                  valid:0
                                   })
         
        
