@@ -59,8 +59,7 @@ const FooterHome =({PostHotelByIdHotel}) =>{
       <div className="flex space-x-4 mt-4">
         <div aria-label="Facebook" className="text-white text-2xl">
           <div className="flex justify-center space-x-4">
-            <FaInstagram color="white"  className="mr-2 z-50 cursor-pointer" fontSize={30} onClick={handleInstagram} />
-            <FaFacebookF color="white" className="mr-2 z-50 cursor-pointer" fontSize={30} onClick={handleFacebook} />
+          
           </div>
         </div>
       </div>

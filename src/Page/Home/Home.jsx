@@ -572,19 +572,19 @@ const [currentIndex, setCurrentIndex] = useState(0);
   const features = [
     {
       title: "Desayuno incluido",
-      image: "https://github.com/rolandoto/image-pms/blob/main/untitled%20folder/desayunof.jpg?raw=true",
+      image: "https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_15531520546.jpg?raw=true",
     },
     {
       title: "Parqueadero privado",
-      image: "https://github.com/rolandoto/image-pms/blob/main/untitled%20folder/parkingf.jpg?raw=true",
+      image: "https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_15531520544.jpg?raw=true",
     },
     {
       title: "Centro de negocios",
-      image: "https://github.com/rolandoto/image-pms/blob/main/untitled%20folder/negociosf.jpg?raw=true",
+      image: "https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_15531520547.jpg?raw=true",
     },
     {
       title: "Recepción 24 horas",
-      image: "https://github.com/rolandoto/image-pms/blob/main/untitled%20folder/recepcionf.jpg?raw=true",
+      image: "https://github.com/rolandoto/image-pms/blob/main/WhatsApp%20Image%202025-02-01%20at%2010.30.43%20PM%20(1).jpeg?raw=true",
     },
   ];
 
@@ -759,10 +759,11 @@ const [currentIndex, setCurrentIndex] = useState(0);
               <div className="flex flex-col  m-auto max-w-7xl md:flex-row items-center justify-center p-8 bg-white">
                   {/* Image Section */}
                   <div className="w-full md:w-1/2 flex justify-start ">
-                    <img
-                      src="https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_155315206030.jpg?raw=true" // Cambia esta ruta a la de tu imagen en la carpeta `public`
-                      className="w-2/2 h-[650px] rounded-lg shadow-lg"
-                    />
+                  <img
+  src="https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_155315206030.jpg?raw=true"
+  alt="Hotel La Naval en Cartagena"
+  className="w-full md:w-[80%] lg:w-[70%] h-[400px] md:h-[500px] lg:h-[650px] object-cover rounded-lg shadow-lg mx-auto"
+/>
                   </div>
 
                   {/* Text Section */}
@@ -773,11 +774,9 @@ const [currentIndex, setCurrentIndex] = useState(0);
                     </h2>
                     <div className="m-auto max-w-4xl md:mt-16 mt-0">
                       <p className="text-[#666666] font-sans md:w-[70%] w-[100%] m-auto text-justify">
-                        Ubicado en el corazón de Cartagena, nuestro hotel es el destino ideal para quienes buscan relajarse y vivir experiencias únicas frente al mar.
+                        Ubicado en el corazón de Cartagena, nuestro hotel es el destino ideal para quienes buscan relajarse.
                       </p>
-                      <p className="text-[#666666] mt-8 text-family m-auto text-justify md:w-[70%] w-[100%]">
-                        Disfruta de nuestras cómodas habitaciones con vista al mar, una refrescante piscina, deliciosa gastronomía caribeña y acceso directo a las mejores playas de la ciudad. Vive la magia de Cartagena con un servicio excepcional pensado para que tu descanso sea perfecto.
-                      </p>
+                      
                     </div>
                   </div>
 
@@ -966,7 +965,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
 
         <div className="relative h-[600px]  overflow-hidden">
           <img 
-            src="https://github.com/rolandoto/image-pms/blob/main/untitled%20folder/47street-t.jpg?raw=true"
+            src="https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_15531520545.jpg?raw=true"
             alt="Business lounge with comfortable seating and city view"
             className="w-full h-full object-cover"
           />
@@ -982,13 +981,13 @@ const [currentIndex, setCurrentIndex] = useState(0);
                         <div className="flex items-center">
                           <img
                             className="w-12 h-12 rounded-full"
-                            src="https://github.com/rolandoto/image-pms/blob/main/Logos/47street.jpg?raw=true"
+                            src="https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_155315206030.jpg?raw=true"
                             alt="Hotel"
                           />
                           <div className="ml-4">
-                            <h2 className="text-lg tex-blue-900 font-semibold">Hotel 47 Medellín Street</h2>
+                            <h2 className="text-lg tex-blue-900 font-semibold">Hotel la naval</h2>
                             <div className="flex items-center">
-                              <span className="text-blue-900 text-lg font-bold">4.0</span>
+                              <span className="text-blue-900 text-lg font-bold">3.9</span>
                               <div className="flex ml-1">
                                 <svg className="w-5 h-5 text-blue-900" fill="currentColor" viewBox="0 0 20 20">
                                   <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.374 4.223a1 1 0 00.95.69h4.455c.969 0 1.371 1.24.588 1.81l-3.6 2.61a1 1 0 00-.364 1.118l1.374 4.223c.3.921-.755 1.688-1.54 1.118l-3.6-2.61a1 1 0 00-1.176 0l-3.6 2.61c-.784.57-1.838-.197-1.54-1.118l1.374-4.223a1 1 0 00-.364-1.118l-3.6-2.61c-.783-.57-.381-1.81.588-1.81h4.455a1 1 0 00.95-.69l1.374-4.223z" />
@@ -1011,7 +1010,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
                             <p className="text-sm text-gray-500 mt-2">powered by <span className="text-gray-700 font-semibold">Google</span></p>
                           </div>
                         </div>
-                        <a target="_blank" href="https://www.google.com/search?q=medeliin+street&rlz=1C5CHFA_enCO1106CO1106&oq=medeliin+street&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgNGIAEMgkIAhAAGA0YgAQyCQgDEAAYDRiABDIJCAQQABgNGIAEMgkIBRAAGA0YgAQyCQgGEAAYDRiABDIJCAcQABgNGIAEMgkICBAAGA0YgAQyCQgJEAAYDRiABNIBCDQ2MzVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x8e442856f7c6f815:0xc0a594c5b655361,3,,,," className="mt-4 w-full py-2 bg-blue-600 text-white rounded-lg flex items-center justify-center">
+                        <a target="_blank" href="https://www.google.com/search?q=hotel+la+naval&sca_esv=afb125d5b9b6df66&rlz=1C1YTUH_esCO1016CO1016&sxsrf=AHTn8zpuZu1HWZKLVtOAPcBBVgfnoERSSw%3A1740769133446&ei=bQfCZ6z7Gp2xkvQP3OWIwQI&ved=0ahUKEwjs5dauhueLAxWdmIQIHdwyIigQ4dUDCBA&uact=5&oq=hotel+la+naval&gs_lp=Egxnd3Mtd2l6LXNlcnAiDmhvdGVsIGxhIG5hdmFsMgoQIxiABBgnGIoFMgQQIxgnMhQQLhiABBjHARiYBRiZBRjLARivATIIEAAYgAQYywEyCBAAGIAEGMsBMggQABiABBjLATIEEAAYHjIEEAAYHjIEEAAYHjIGEAAYBRgeSK8sUPoHWNgqcAV4ApABAJgB7wGgAbEQqgEGMC4xMS4yuAEDyAEA-AEBmAIOoALxCsICBBAAGEfCAgoQABiwAxjWBBhHwgIOEAAYgAQYsAMYkgMYigXCAhAQABiABBiwAxhDGMkDGIoFwgIGEAAYBxgewgIHEAAYgAQYDcICCBAAGIAEGKIEwgIFEAAY7wXCAgcQIxiwAxgnwgIHECMYsAIYJ8ICExAuGIAEGMcBGJgFGJkFGA0YrwHCAgYQABgNGB7CAggQABgFGA0YHpgDAOIDBRIBMSBAiAYBkAYKkgcFNi42LjKgB61g&sclient=gws-wiz-serp#lrd=0x8ef62f12ab1e81e3:0xf1de5621d5ae7ca4,3,,,," className="mt-4 w-full py-2 bg-blue-600 text-white rounded-lg flex items-center justify-center">
 
                           valóranos en <span className="ml-1 font-semibold"><svg viewBox="0 0 512 512" height="18" width="18"><g fill="none" fill-rule="evenodd"><path d="M482.56 261.36c0-16.73-1.5-32.83-4.29-48.27H256v91.29h127.01c-5.47 29.5-22.1 54.49-47.09 71.23v59.21h76.27c44.63-41.09 70.37-101.59 70.37-173.46z" fill="#4285f4"></path><path d="M256 492c63.72 0 117.14-21.13 156.19-57.18l-76.27-59.21c-21.13 14.16-48.17 22.53-79.92 22.53-61.47 0-113.49-41.51-132.05-97.3H45.1v61.15c38.83 77.13 118.64 130.01 210.9 130.01z" fill="#34a853"></path><path d="M123.95 300.84c-4.72-14.16-7.4-29.29-7.4-44.84s2.68-30.68 7.4-44.84V150.01H45.1C29.12 181.87 20 217.92 20 256c0 38.08 9.12 74.13 25.1 105.99l78.85-61.15z" fill="#fbbc05"></path><path d="M256 113.86c34.65 0 65.76 11.91 90.22 35.29l67.69-67.69C373.03 43.39 319.61 20 256 20c-92.25 0-172.07 52.89-210.9 130.01l78.85 61.15c18.56-55.78 70.59-97.3 132.05-97.3z" fill="#ea4335"></path><path d="M20 20h472v472H20V20z"></path></g></svg></span>
                         </a>
@@ -1026,11 +1025,11 @@ const [currentIndex, setCurrentIndex] = useState(0);
     
     <div
       className="relative h-[910px] bg-cover bg-center"
-      style={{ backgroundImage: 'url("https://github.com/rolandoto/image-pms/blob/main/Logos/537507446.jpg?raw=true")' }}
+      style={{ backgroundImage: 'url("https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_155315206030.jpg?raw=true")' }}
     >
       <div className="absolute inset-0 bg-black opacity-60"></div>
       
-      {/* Main Message */}
+
       <div className="absolute xl:top-1/4 top-[90px] text-white max-w-lg px-6">
     <h1 className="text-4xl xl:text-6xl font-bold leading-tight">
       ¡Queremos que tu estancia sea inolvidable!
@@ -1045,23 +1044,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
 
       {/* Image Cards */}
       <div className="absolute  lg:top-1/4 top-[410px] left-0 right-8 flex flex-col xl:flex-row items-center xl:items-start justify-center xl:justify-end space-y-4 xl:space-y-0 xl:space-x-4">
-        {hotelReferid.map((caption, index) => (
-          <a
-            target="_blank"
-            href={caption.url}
-            key={index}
-            className="relative w-48 h-32 xl:w-64 xl:h-48 cursor-pointer rounded overflow-hidden shadow-lg"
-          >
-            <img
-              src={caption.image}
-              alt={caption.description}
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute bottom-0 bg-black bg-opacity-50 text-white text-[16px] md:text-[16px] p-2 w-full text-center">
-              {caption.description}
-            </div>
-          </a>
-        ))}
+       
       </div>
 
     </div>
