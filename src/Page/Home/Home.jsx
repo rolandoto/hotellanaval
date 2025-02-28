@@ -571,7 +571,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
   
   const features = [
     {
-      title: "Desayuno incluido",
+      title: "Minibar",
       image: "https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_15531520546.jpg?raw=true",
     },
     {
