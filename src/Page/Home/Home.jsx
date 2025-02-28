@@ -588,7 +588,7 @@ const [currentIndex, setCurrentIndex] = useState(0);
     },
   ];
 
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
 
 
     return (
@@ -914,11 +914,11 @@ const [currentIndex, setCurrentIndex] = useState(0);
               </li>
               <li className="flex items-center space-x-2">
                 <span className="w-1.5 h-1.5 bg-blue-900 rounded-full" />
-                <span className="text-gray-700">Acceso a servicios VIP</span>
+                <span className="text-gray-700">Acceso a servicios </span>
               </li>
             </ul>
             <p className="text-gray-700">
-              ¡Descubra todas las ventajas de ser miembro del club de negocios 47 Street!
+              ¡Descubra todas las ventajas!
             </p>
             </>)}
           </div>
