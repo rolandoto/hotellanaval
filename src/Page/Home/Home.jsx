@@ -381,7 +381,7 @@ const subtotal = getCartSubtotal()
       price:140000, image: "https://github.com/rolandoto/image-pms/blob/main/Logos/WhatsApp%20Image%202025-02-17%20at%207.55.20%20PM.jpeg?raw=true" },
       {title: 'MULTIPLE',
       roomTypeDescription: "<span>La Habitación con Jacuzzi te ofrece todo lo necesario para una experiencia de relajación sin igual en el corazón de Medellín. Habitación con cama doble, aire acondicionado, televisión Smart TV, Wi-Fi gratuito para mantenerte conectado, y un baño privado con ducha</span>", 
-      price:180000, image: "https://github.com/rolandoto/image-pms/blob/main/Logos/WhatsApp%20Image%202025-02-17%20at%207.55.20%20PM.jpeg?raw=true"}, 
+      price:180000, image: "https://github.com/rolandoto/image-pms/blob/main/WhatsApp%20Image%202025-02-01%20at%2010.30.42%20PM.jpeg?raw=true"}, 
       
     ];
 
