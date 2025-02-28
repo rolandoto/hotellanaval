@@ -13,7 +13,7 @@ const UseHotelActions =() =>{
             
             if(response){
                 dispatch(setHotel(response)) 
-                window.scrollTo({ top: 300, behavior: "smooth" });
+                window.scrollTo({ top: 500, behavior: "smooth" });
             }else{
                 dispatch(setError("no found")) 
             }
