@@ -9,6 +9,7 @@ import SearchGlobal from "../../Component/SearchGlobal/SearchGlobal";
 import { MainProduct, SectionSearch } from "../../Ui/Style/GeneralStyle";
 import BookNowButton from "../../Component/BookNowButton/BookNowButton";
 import LoadingSkeleton from "../../Component/LoadingSkeleton/LoadingSkeleton";
+import FooterHome from "../../Component/Footer/FooterHome";
 
 const DetailEvents =() =>{
 
@@ -145,7 +146,7 @@ const DetailEvents =() =>{
                 
 
                 {FillContent()}
-              <Footer/>
+                <FooterHome />
             </>)
 
 }

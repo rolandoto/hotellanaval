@@ -28,6 +28,7 @@ import WhatsappButton from "../../Component/WhatsappButton/WhatsappButton";
 import { SlCalender } from "react-icons/sl";
 import { FaUser } from "react-icons/fa";
 import { FiArrowRight } from "react-icons/fi";
+import FooterHome from "../../Component/Footer/FooterHome";
 
 const Accommodation = () => {
 
@@ -207,7 +208,6 @@ const Accommodation = () => {
     }
 
 
-    console.log(hotel)
   
     useEffect(() =>{
       FetchDate ()
@@ -328,7 +328,7 @@ const Accommodation = () => {
                  </div> 
             </div>} 
             {scrolledbook && (
-                <div className="w-full mt-16  animation z-40 lg:hidden bg-white fixed top-[50px] p-4  shadow-md ">
+                <div className="w-full mt-0  animation z-40 lg:hidden bg-white fixed top-[50px] p-4  shadow-md ">
                   <div className="flex items-center justify-between text-gray-700 ">
                     <div className="flex items-center" onClick={HandClickMenu}>
                       <SlCalender fontSize={20}  className="mr-2" />
@@ -382,7 +382,7 @@ const Accommodation = () => {
                     {FillContentPromotions()}
                   </div>
                     {FillContent()}
-                    <Footer />
+                    <FooterHome />
                 </div>
                
             </div>

@@ -29,20 +29,15 @@ const Footer =() =>{
             <footer className="bg-white   text-black py-8">
                 <div className="mx-auto max-w-7xl p-4  flex flex-col md:flex-row justify-between items-start md:items-center">
                 <div className="flex">
-                    <img
-                        src="https://github.com/rolandoto/image-pms/blob/main/PNG/Logotipo_Versio%CC%81n%20Principal_Positivo.png?raw=true"
-                        alt="Logo de Gallery Hotel" 
-                        width="100" 
-                        height="100"
-                        className="w-48 mb-4"
-                    />
+                    <h1   className="w-48 mb-4">Hotel naval</h1>
+                   
                 </div>
 
                 <div>
                     <div className="">
                         <ul className="space-y-2">
-                            <li className="flex items-center"> <IconFaWhatsapp /> +57 301 746 13 71</li>
-                            <li className="flex items-center mr-6">  <IconsMdEmail /> gerencia@civitas-medellin.com</li>
+                            <li className="flex items-center"> <IconFaWhatsapp /> +57 3006528417</li>
+                            <li className="flex items-center mr-6">  <IconsMdEmail /> hotellanaval@gmail.com</li>
                             <li className="flex items-center"> <IconFaMapMarkerAlt/>crra 44 #47-20                           </li>
                         </ul>
                     </div>
@@ -59,7 +54,7 @@ const Footer =() =>{
                 <div className="text-center border-t-1  mx-auto max-w-7xl  text-white mt-8">
                     <div className=" flex  flex-col sm:flex-row  justify-between mt-8 mx-auto max-w-7xl items-center">
                             <div>
-                                Copyright © 2024 – All Rights Reserved Gallery Hotel
+                                Copyright © 2025 – All Rights Reserved Gallery Hotel
                             </div>
                                     <div className=" ">
                                     <div className="flex space-x-4">

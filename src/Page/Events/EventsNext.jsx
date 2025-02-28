@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { MainProduct, SectionSearch } from "../../Ui/Style/GeneralStyle";
 import SearchGlobal from "../../Component/SearchGlobal/SearchGlobal";
 import BookNowButton from "../../Component/BookNowButton/BookNowButton";
+import FooterHome from "../../Component/Footer/FooterHome";
 
 const EventsNext =()  =>{
     useEffect(() => {
@@ -76,7 +77,7 @@ const EventsNext =()  =>{
             </div>  
                 <WhatsappButton />
             <Events />
-            <Footer/>
+            <FooterHome/>
         </>)
 
 }

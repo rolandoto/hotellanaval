@@ -115,7 +115,7 @@
     margin: auto;
     position: absolute;
     right: 186px;
-    top: 645px;
+    top: 360px;
     transition: .3s;
     -webkit-user-select: none;
     user-select: none;
@@ -154,12 +154,12 @@
   }
   
   .rdrStartEdge{
-    background-color: #b0a180;
+    background-color: black;
 
   }
 
   .rdrEndEdge{
-    background-color: #b0a180;
+    background-color: black;
   
   }
 

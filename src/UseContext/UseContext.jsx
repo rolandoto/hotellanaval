@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import { addDays} from 'date-fns';
-import moment from "moment";
 
 const Autoconext = React.createContext({})
 
@@ -42,25 +40,42 @@ export const AutoProvider =({children}) =>{
       }
     ]);
   
-    const handleSelect = (ranges) => {
-      const { startDate, endDate } = ranges.selection;
-      setState([
-        {
+    const [isStartDateSelected, setIsStartDateSelected] = useState(false);
+ 
+const handleSelect = (ranges) => {
+  const { startDate, endDate } = ranges.selection;
+
+  setState([
+      {
           startDate,
           endDate,
           key: 'selection',
-          color: startDate && endDate ? '#b0a180' : 'transparent', // Solo asigna color si ambas fechas son válidas
-        },
-      ]);
+          color: startDate && endDate ? 'black' : 'transparent',
+      },
+  ]);
+
+  if (startDate && !isStartDateSelected) {
     
-      
-      if (startDate && !endDate) {
-        console.log("Seleccione fecha inicio");
-      } else if (startDate && endDate) {
-        console.log("Seleccione fecha final");
+      setIsStartDateSelected(true);
+  } else if (startDate && endDate) {
+      // Calcula la diferencia en días entre las dos fechas
+      const diffInTime = endDate - startDate;
+      const diffInDays = diffInTime / (1000 * 60 * 60 * 24); // Convierte el tiempo en días
+
+      if (diffInDays < 1) {
+       
+          setIsStartDateSelected(false); // Reinicia la selección
+          alert("deber ser mayor a un dia")
+      } else {
+          // Si el rango es válido
+         
+          setIsStartDateSelected(false); // Reinicia para futuras selecciones
+          setContextMenuPosition(false); // Cierra el modal o menú contextual
       }
-    };
-  
+  }
+};
+
+
     const getClassNameForDate = (date) => {
       const { startDate, endDate } = state[0];
       

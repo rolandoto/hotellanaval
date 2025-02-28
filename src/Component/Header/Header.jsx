@@ -52,7 +52,7 @@ const Header =() =>{
            }`}
          >
            <nav className="border-b p-2 border-white flex justify-between items-center space-x-6 max-w-[97%] mx-auto">
-             <div className="text-2xl sm:text-3xl font-lora"><Link to="/"  >  <img  class="h-24 "  src="https://github.com/rolandoto/image-pms/blob/main/PNG/Logotipo_Versio%CC%81n%20Principal_Negativo.png?raw=true" alt="" />             </Link> </div>
+             <div className="text-2xl sm:text-3xl font-lora"><Link to="/"  >  Hotel la naval          </Link> </div>
              <div className="hidden md:flex space-x-6">
                <Link to="/" className="text-[15px] hover:underline">
                Inicio

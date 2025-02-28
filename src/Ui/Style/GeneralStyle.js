@@ -255,7 +255,7 @@ export const BorderInput = styled.div`
 export const BorderInputInitial = styled(BorderInput)`
   padding: 15px;
   background: white;
-  box-shadow: 17px 20px 40px rgba(0, 0, 0, 0.21);
+
   border-radius: 39px;
 `;
 export const MainAccomodation = styled.main`

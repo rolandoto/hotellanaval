@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #bebba9 !important; 
-}
 .container {
   height: 100vh;
   overflow: scroll; /* Permite el scroll */

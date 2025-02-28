@@ -15,6 +15,7 @@ import FormCheckout from '../../Component/FormCheckout/FormCheckout';
 import Footer from '../../Component/Footer/Footer';
 import ConfirmationMessage from '../../Component/ConfirmationMessage/ConfirmationMessage';
 import WhatsappButton from '../../Component/WhatsappButton/WhatsappButton';
+import FooterHome from '../../Component/Footer/FooterHome';
 
 const Checkout  =() =>{
     useFetchData();
@@ -101,7 +102,7 @@ return (<>
     <WhatsappButton />
     <Toaster position="bottom-right"  richColors   />  
         {FillContent()}
-        <Footer />
+        <FooterHome />
         </>)
 
 }

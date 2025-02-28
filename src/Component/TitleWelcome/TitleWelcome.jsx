@@ -1,29 +1,39 @@
 import React from "react"
 
+const benefits = [
+    { icon: "🍹", title: "BEBIDA DE", subtitle: "Bienvenida" },
+    { icon: "🛎️", title: "EARLY CHECK-IN", subtitle: "Bajo disponibilidad" },
+    { icon: "🛏️", title: "UPGRADE DE HABITACIÓN", subtitle: "Bajo disponibilidad" },
+    { icon: "🍽️", title: "15% DE DESCUENTO", subtitle: "En restaurante" },
+    { icon: "👕", title: "15% DE DESCUENTO", subtitle: "En lavandería" },
+  ];
 
 const TitleWelcome  =() =>{
 
     return (
-        <div className="w-full ">
-            <div className="flex flex-col     mx-auto max-w-7xl  md:flex-row items-center  p-4">
-               <div className="md:w-1/2 p-4">
-               <img
-                    src="https://github.com/rolandoto/image-pms/blob/main/IMG_4657.JPG?raw=true"
-                    alt="Room"
-                    className="w-full h-auto rounded-3xl shadow-2xl"
-                />
-                    </div>
-                <div className="md:w-1/2 p-4">
-                    <h2 className="text-3xl font-normal text-white mb-4 font-lora text-[30px] text-center ">¡Civitas!</h2>
-                <p className="text-justify text-white	 mb-4">
-                    Ubicado en el dinámico ,  la cultura de Medellín, Civitas redefine la forma en que experimentas la ciudad. Nuestro espacio celebra la rica cultura callejera y artística de Medellín, brindándote un lugar acogedor para vivir, trabajar y conectarte con otros. Cada rincón del hotel está inspirado en el arte urbano local, creando una atmósfera única y estimulante.
-                </p>
-                <p className=" text-justify text-white	 ">
-                    Nuestras habitaciones de coliving, decoradas con obras de artistas locales, ofrecen un refugio creativo y cómodo, perfecto para quienes buscan una experiencia auténtica y enriquecedora. Disfruta de la espectacular terraza en la azotea, donde podrás relajarte con cócteles artesanales y admirar las vistas panorámicas del Parque Lleras. Además, nuestro restaurante te invita a un viaje de sabores con cocina local reinventada, ideal para compartir con amigos y nuevos conocidos.
-                </p>
-                </div>
+        <section className="text-center p-8 bg-white">
+        <h2 className="text-3xl font-semibold text-blue-600">DISFRUTA DE</h2>
+        <h3 className="text-xl font-bold text-gray-800 mt-2">VENTAJAS EXCLUSIVAS</h3>
+        <p className="text-sm text-yellow-600 mt-1">
+          FORMA PARTE DE NUESTRO PROGRAMA DE FIDELIZACIÓN
+        </p>
+  
+        <div className="flex justify-center my-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Barlovento_logo.png" alt="Barlovento" className="h-10" />
+        </div>
+  
+        <div className="flex flex-wrap justify-center gap-6 mt-6">
+          {benefits.map((benefit, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="bg-yellow-600 text-white w-16 h-16 flex items-center justify-center rounded-full text-2xl">
+                {benefit.icon}
+              </div>
+              <p className="text-sm font-bold text-gray-800 mt-2">{benefit.title}</p>
+              <p className="text-xs text-gray-600">{benefit.subtitle}</p>
             </div>
-        </div>)
+          ))}
+        </div>
+      </section>)
 
 }
 
