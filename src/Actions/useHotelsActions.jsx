@@ -10,8 +10,10 @@ const UseHotelActions =() =>{
         dispatch(loading())
         try {
             const response  = await   HttpClient.PostHotelByIdHotel({id,desde,hasta,counPeople})
+            
             if(response){
                 dispatch(setHotel(response)) 
+                window.scrollTo({ top: 300, behavior: "smooth" });
             }else{
                 dispatch(setError("no found")) 
             }
