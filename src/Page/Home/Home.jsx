@@ -374,7 +374,7 @@ const subtotal = getCartSubtotal()
     const rooms = [
       {title: 'SENCILLA',
           roomTypeDescription: " <span> Habitación perfecta para viajeros solitarios o parejas en busca de confort y economía. Aquí encontrarás una cómoda cama doble para descansar, con ventilador, televisión Smart TV para entretenerse, Wi-Fi gratuito para mantenerte conectado, y un baño privado </span>", 
-          price:90000 , 
+          price:95000 , 
           image:"https://github.com/rolandoto/image-pms/blob/main/Logos/WhatsApp%20Image%202025-02-17%20at%207.55.20%20PM.jpeg?raw=true"},
       {title: ' TRIPLE',
       roomTypeDescription: " <span> Habitación con cama doble, aire acondicionado para mantener la temperatura ideal, televisor Smart TV para entretenerse, Wi-Fi gratuito para mantenerte conectado, y un baño privado con ducha y todas las comodidades necesarias para tu comodidad.</span>", 
