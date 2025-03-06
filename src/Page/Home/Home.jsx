@@ -22,6 +22,8 @@ import { PiCallBellFill } from "react-icons/pi";
 import { AiOutlineLeft } from "react-icons/ai";
 import { AiOutlineRight } from "react-icons/ai";
 import FooterHome from "../../Component/Footer/FooterHome";
+import { Helmet } from "react-helmet";
+
 
 
 function RegistroModal({ isOpen, onClose }) {
@@ -373,9 +375,9 @@ const subtotal = getCartSubtotal()
 
     const rooms = [
       {title: 'SENCILLA',
-          roomTypeDescription: " <span> Habitación perfecta para viajeros solitarios o parejas en busca de confort y economía. Aquí encontrarás una cómoda cama doble para descansar, con ventilador, televisión Smart TV para entretenerse, Wi-Fi gratuito para mantenerte conectado, y un baño privado </span>", 
-          price:95000 , 
-          image:"https://github.com/rolandoto/image-pms/blob/main/Logos/WhatsApp%20Image%202025-02-17%20at%207.55.20%20PM.jpeg?raw=true"},
+        roomTypeDescription: " <span> Habitación perfecta para viajeros solitarios o parejas en busca de confort y economía. Aquí encontrarás una cómoda cama doble para descansar, con ventilador, televisión Smart TV para entretenerse, Wi-Fi gratuito para mantenerte conectado, y un baño privado </span>", 
+        price:95000 , 
+        image:"https://github.com/rolandoto/image-pms/blob/main/Logos/WhatsApp%20Image%202025-02-17%20at%207.55.20%20PM.jpeg?raw=true"},
       {title: ' TRIPLE',
       roomTypeDescription: " <span> Habitación con cama doble, aire acondicionado para mantener la temperatura ideal, televisor Smart TV para entretenerse, Wi-Fi gratuito para mantenerte conectado, y un baño privado con ducha y todas las comodidades necesarias para tu comodidad.</span>", 
       price:140000, image: "https://github.com/rolandoto/image-pms/blob/main/Logos/WhatsApp%20Image%202025-02-17%20at%207.55.20%20PM.jpeg?raw=true" },
@@ -593,6 +595,17 @@ const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
         <div>
+
+        <Helmet>
+        <title>Oferta Especial: 10% de Descuento en hotel la naval</title>
+        <meta name="description" content={`Reserva en hotel la naval y obtén un 10% de descuento con el código hotel la naval Oferta por tiempo limitado.`} />
+        <meta name="keywords" content="hotel, descuento, reserva, promoción, alojamiento, oferta especial" />
+        <meta property="og:title" content={`Código de Descuento hotel la naval`} />
+        <meta property="og:description" content={`Aprovecha un 10% de descuento en hotel la naval. Usa el código promocional hotel la naval al reservar.`} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.llerasparkhotel.com/promocion" />
+      </Helmet>
+
           {FillContent}
            <div
       className="relative h-screen bg-cover bg-center"
