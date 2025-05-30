@@ -109,15 +109,7 @@ const CardAccomodation =({ID,room_image,title,description,Price,cantidad,nights,
                 <span className="text-sm">+ Habitación online</span>
               </div>
             </RadioButton>
-            <RadioButton
-            checked={true}
-              >
-              <Icon name="check" />
-              <div className="flex justify-between w-full">
-                <span className="text-sm">Desayuno</span>
-                <span className="text-sm">+ Habitación online</span>
-              </div>
-            </RadioButton>
+           
           </div>
         </div>
         <div className="p-4">
