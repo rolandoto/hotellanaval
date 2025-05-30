@@ -35,9 +35,9 @@ const FormCheckout=({Country,handleSubmit,loading,formErrors,handleChange,formVa
         return  hotel?.nombre
     }
 
-    return (<div className= " " >
-                <div className="flex justify-center   min-h-screen">
-                    <div className="bg-white p-6 rounded-3xl shadow-lg w-full max-w-5xl">
+    return (<div className= "  min-h-screen" >
+                <div className="flex  justify-center  ">
+                    <div className="mt-12 bg-white p-6 rounded-3xl shadow-lg w-full max-w-5xl">
                     <div className="flex flex-col md:flex-row">
                         <div className="w-full md:w-1/2 p-4">
                         <h2 className="text-xl font-semibold mb-4">Datos del Huésped</h2>

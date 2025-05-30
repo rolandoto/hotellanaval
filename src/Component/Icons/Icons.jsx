@@ -30,6 +30,8 @@ import { MdOutlineEmail } from "react-icons/md";
 import { Tooltip } from "react-tooltip";
 import { PiBedThin } from "react-icons/pi";
 import { FaUser } from "react-icons/fa";
+import { ImUsers } from "react-icons/im";
+import { MdOutlineKingBed } from "react-icons/md";
 
 export const IconsSnow =() =>{
     const key = `my-tooltip`;
@@ -252,5 +254,10 @@ export const IconFaCheckCircle  =({color}) =>{
 }
 
 export const IconFaUser  =({color}) =>{
-    return <FaUser   color={color} fontSize={25}  />
+    return <ImUsers   color={color} fontSize={20}  />
+}
+
+
+export const IconMdOutlineKingBed   =({color}) =>{
+    return <MdOutlineKingBed    color={color} fontSize={25}  />
 }

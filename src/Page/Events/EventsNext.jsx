@@ -8,6 +8,7 @@ import { MainProduct, SectionSearch } from "../../Ui/Style/GeneralStyle";
 import SearchGlobal from "../../Component/SearchGlobal/SearchGlobal";
 import BookNowButton from "../../Component/BookNowButton/BookNowButton";
 import FooterHome from "../../Component/Footer/FooterHome";
+import { Helmet } from "react-helmet";
 
 const EventsNext =()  =>{
     useEffect(() => {
@@ -59,7 +60,15 @@ const EventsNext =()  =>{
     return (<>
            
             <Header/>
-
+            <Helmet>
+              <title>Eventos  Black Friday - 10% de Descuento en hotel la naval</title>
+              <meta name="description" content={`Reserva en hotel la naval y obtén un 10% de descuento con el código hotel la naval Oferta por tiempo limitado.`} />
+              <meta name="keywords" content="hotel, descuento, reserva, promoción, alojamiento, oferta especial" />
+              <meta property="og:title" content={`Código de Descuento hotel la naval`} />
+              <meta property="og:description" content={`Aprovecha un 10% de descuento en hotel la naval.`} />
+              <meta property="og:type" content="website" />
+              <meta property="og:url" content="https://www.hotellanaval.co/Accomodation" />
+          </Helmet>
         
           <div className="p-2 lg:px-8">
   

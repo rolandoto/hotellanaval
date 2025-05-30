@@ -16,6 +16,7 @@ import Footer from '../../Component/Footer/Footer';
 import ConfirmationMessage from '../../Component/ConfirmationMessage/ConfirmationMessage';
 import WhatsappButton from '../../Component/WhatsappButton/WhatsappButton';
 import FooterHome from '../../Component/Footer/FooterHome';
+import HeaderStep from '../../Component/HeaderStep/HeaderStep';
 
 const Checkout  =() =>{
     useFetchData();
@@ -95,10 +96,9 @@ const FillContent =() =>{
 
 
 return (<>
-    <Header />
     {loadingCart && <LoadingOverlay title={"Cargando..."} />}
     {loading && <LoadingOverlay title={"Creando reserva..."} />}  
-    <HeaderCheckout />
+    <HeaderStep currentStep={2} />
     <WhatsappButton />
     <Toaster position="bottom-right"  richColors   />  
         {FillContent()}
