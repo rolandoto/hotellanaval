@@ -61,14 +61,10 @@ const EventsNext =()  =>{
            
             <Header/>
             <Helmet>
-              <title>Eventos  Black Friday - 10% de Descuento en hotel la naval</title>
-              <meta name="description" content={`Reserva en hotel la naval y obtén un 10% de descuento con el código hotel la naval Oferta por tiempo limitado.`} />
-              <meta name="keywords" content="hotel, descuento, reserva, promoción, alojamiento, oferta especial" />
-              <meta property="og:title" content={`Código de Descuento hotel la naval`} />
-              <meta property="og:description" content={`Aprovecha un 10% de descuento en hotel la naval.`} />
-              <meta property="og:type" content="website" />
-              <meta property="og:url" content="https://www.hotellanaval.co/Accomodation" />
-          </Helmet>
+                <title>Detalle de eventos</title>
+                <meta name="description" content="Habitaciones Black Friday - 10% de Descuento en hotel la naval." />
+                <link rel="canonical" href="https://www.hotellanaval.co/events" />
+            </Helmet>
         
           <div className="p-2 lg:px-8">
   

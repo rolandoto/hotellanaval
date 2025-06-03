@@ -17,6 +17,7 @@ import ConfirmationMessage from '../../Component/ConfirmationMessage/Confirmatio
 import WhatsappButton from '../../Component/WhatsappButton/WhatsappButton';
 import FooterHome from '../../Component/Footer/FooterHome';
 import HeaderStep from '../../Component/HeaderStep/HeaderStep';
+import { Helmet } from 'react-helmet';
 
 const Checkout  =() =>{
     useFetchData();
@@ -98,6 +99,11 @@ const FillContent =() =>{
 return (<>
     {loadingCart && <LoadingOverlay title={"Cargando..."} />}
     {loading && <LoadingOverlay title={"Creando reserva..."} />}  
+    <Helmet>
+        <title>Checkout</title>
+        <meta name="description" content="Habitaciones Black Friday - 10% de Descuento en hotel la naval." />
+        <link rel="canonical" href="https://www.hotellanaval.co/Checkout" />
+    </Helmet>
     <HeaderStep currentStep={2} />
     <WhatsappButton />
     <Toaster position="bottom-right"  richColors   />  

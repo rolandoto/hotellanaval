@@ -156,15 +156,12 @@ const Accommodation = () => {
 
     return (
       <div  className="bg-[#f6f6f6] h-full  " >
-          <Helmet>
-            <title>Habitaciones Black Friday - 10% de Descuento en hotel la naval</title>
-            <meta name="description" content={`Reserva en hotel la naval y obtén un 10% de descuento con el código hotel la naval Oferta por tiempo limitado.`} />
-            <meta name="keywords" content="hotel, descuento, reserva, promoción, alojamiento, oferta especial" />
-            <meta property="og:title" content={`Código de Descuento hotel la naval`} />
-            <meta property="og:description" content={`Aprovecha un 10% de descuento en hotel la naval.`} />
-            <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.hotellanaval.co/Accomodation" />
-        </Helmet>
+              <Helmet>
+                <title>Habitaciones</title>
+                <meta name="description" content="Habitaciones Black Friday - 10% de Descuento en hotel la naval." />
+                <link rel="canonical" href="https://www.hotellanaval.co/Accomodation" />
+              </Helmet>
+
                 <div className="relative  bg-cover bg-center h-full">
                     <div className="hidden md:block">
                       <HeaderStep currentStep={1} />
