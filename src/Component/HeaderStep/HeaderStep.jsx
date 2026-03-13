@@ -15,7 +15,7 @@ const HeaderStep =({currentStep}) =>{
           <div className="flex justify-between items-center gap-4 sm:gap-10 w-full sm:w-auto">
             <Link to="/">
             <img
-              src="https://www.hotellanaval.co/fav.png"
+              src="https://www.hotelnaval.co/fav.png"
               alt="Logo"
               className="h-10 sm:h-14"
             />
@@ -36,8 +36,7 @@ const HeaderStep =({currentStep}) =>{
                 ))}
             </div>
           </div>
-         
-
+        
           <div className=" md:flex hidden flex-wrap sm:flex-nowrap items-start sm:items-center gap-3 text-sm w-full">
             {steps.map(({ step, label }, index) => {
               const isCurrent = step === currentStep;
