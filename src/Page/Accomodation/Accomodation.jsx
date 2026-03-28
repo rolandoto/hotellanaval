@@ -159,7 +159,7 @@ const Accommodation = () => {
               <Helmet>
                 <title>Habitaciones</title>
                 <meta name="description" content="Habitaciones Black Friday - 10% de Descuento en hotel la naval." />
-                <link rel="canonical" href="https://www.hotellanaval.co/Accomodation" />
+                <link rel="canonical" href="https://www.hotelnaval.co/Accomodation" />
               </Helmet>
 
                 <div className="relative  bg-cover bg-center h-full">

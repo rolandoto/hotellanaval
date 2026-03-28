@@ -23,6 +23,7 @@
   
     <!-- Indexación y rastreo -->
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.hotelnaval.co/" />
 
     <!-- Iconos y configuraciones -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/fav.png" />
@@ -34,7 +35,7 @@
     <meta property="og:title" content="Hotel La Naval - Cartagena" />
     <meta property="og:description" content="Vive una experiencia única en el Hotel La Naval. Ubicado en Cartagena, con playa, piscina y servicios exclusivos." />
     <meta property="og:image" content="%PUBLIC_URL%/fav.png" />
-    <meta property="og:url" content="https://www.hotellanaval.co/" />
+    <meta property="og:url" content="https://www.hotelnaval.co/" />
     <meta property="og:type" content="website" />
 
     <!-- Twitter Card para mejorar el SEO en Twitter -->
@@ -48,7 +49,7 @@
         "@context": "https://schema.org",
         "@type": "Hotel",
         "name": "Hotel La Naval",
-        "image": "https://www.hotellanaval.co/fav.png",
+        "image": "https://www.hotelnaval.co/fav.png",
         "description": "Hotel La Naval en Cartagena",
         "address": {
           "@type": "PostalAddress",
@@ -80,6 +81,18 @@
       </script>
 
     <title>Hotel La Naval | Vacaciones en Cartagena</title>
+    <script>
+      (function () {
+        var canonicalHost = "www.hotelnaval.co";
+        var isHttps = window.location.protocol === "https:";
+        var isCanonicalHost = window.location.host === canonicalHost;
+
+        if (!isHttps || !isCanonicalHost) {
+          var redirectUrl = "https://" + canonicalHost + window.location.pathname + window.location.search + window.location.hash;
+          window.location.replace(redirectUrl);
+        }
+      })();
+    </script>
 </head>
 
   <body>
