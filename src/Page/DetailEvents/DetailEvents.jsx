@@ -51,6 +51,7 @@ const DetailEvents =() =>{
     }, []);
 
     let { userId } = useParams();
+    const canonicalUrl = `https://www.hotelnaval.co/DetailEvents/${userId}`;
 
     const {geteventsDetail,loadinggetEventsDetail,errorgetEventsDetail}= useSelector(state => state.Events);
     const {getEventsDetail} =UseEventsActions()    
@@ -132,7 +133,7 @@ const DetailEvents =() =>{
             <Helmet>
                 <title>Detalle de eventos</title>
                 <meta name="description" content="Habitaciones Black Friday - 10% de Descuento en hotel la naval." />
-                <link rel="canonical" href="https://www.hotellanaval.co/events" />
+                <link rel="canonical" href={canonicalUrl} />
             </Helmet>
 
             <div className="lg:hidden flex  p-2 lg:px-8" >

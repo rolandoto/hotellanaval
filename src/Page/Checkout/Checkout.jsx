@@ -102,7 +102,7 @@ return (<>
     <Helmet>
         <title>Checkout</title>
         <meta name="description" content="Habitaciones Black Friday - 10% de Descuento en hotel la naval." />
-        <link rel="canonical" href="https://www.hotellanaval.co/Checkout" />
+        <link rel="canonical" href="https://www.hotelnaval.co/Checkout" />
     </Helmet>
     <HeaderStep currentStep={2} />
     <WhatsappButton />

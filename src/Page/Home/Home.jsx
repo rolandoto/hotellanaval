@@ -341,7 +341,8 @@ const [currentIndex, setCurrentIndex] = useState(0);
             <meta property="og:title" content={`Código de Descuento hotel la naval`} />
             <meta property="og:description" content={`Aprovecha un 10% de descuento en hotel la naval. Usa el código promocional hotel la naval al reservar.`} />
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://www.hotellanaval.co/" />
+            <meta property="og:url" content="https://www.hotelnaval.co/" />
+            <link rel="canonical" href="https://www.hotelnaval.co/" />
         </Helmet>
           <div className="relative h-screen bg-cover bg-center" style={{ backgroundImage: "url('https://github.com/rolandoto/image-pms/blob/main/hotel-la-naval_155315206030.jpg?raw=true')" }} >
             <div className="absolute inset-0 bg-black opacity-60"></div>

@@ -11,6 +11,7 @@ import FooterHome from "../../Component/Footer/FooterHome";
 import { Helmet } from "react-helmet";
 
 const EventsNext =()  =>{
+    const canonicalUrl = "https://www.hotelnaval.co/Events";
     useEffect(() => {
         // Scrolls to the top of the document on component mount
         window.scrollTo(0, 0);
@@ -61,9 +62,9 @@ const EventsNext =()  =>{
            
             <Header/>
             <Helmet>
-                <title>Detalle de eventos</title>
+                <title>Eventos</title>
                 <meta name="description" content="Habitaciones Black Friday - 10% de Descuento en hotel la naval." />
-                <link rel="canonical" href="https://www.hotellanaval.co/events" />
+                <link rel="canonical" href={canonicalUrl} />
             </Helmet>
         
           <div className="p-2 lg:px-8">
